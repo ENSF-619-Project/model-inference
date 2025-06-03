@@ -1,4 +1,4 @@
-# Goblin Inference
+#  Goblin Inference
 
 This repository provides code for running machine learning inference on software package data using pre-trained models. The models predict the likelihood of vulnerabilities (CVEs) in software dependencies over different time windows. Four model types are included -- Random Forest, XGBoost, Logistic Regression, and Naive Bayes. The Model class in `model.py` handles preprocessing and inference.
 
@@ -49,7 +49,7 @@ There are **43 fields** in total:
 ### Input Fields
 
 - `release_id`: Maven ID of the package under consideration.
-- `speed`: Defined by Jaime et al. and computed using the Goblin Weaver.
+- `speed`: As defined and computed by the Goblin framework ([Jaime et al.](https://hal.science/hal-04392296/document)).
 - `package_release_month`: Month when `release_id` was published.
 
 For each of the 10 dependencies (indexed by `n` from 1 to 10):
