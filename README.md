@@ -54,7 +54,7 @@ There are **43 fields** in total:
 
 For each of the 10 dependencies (indexed by `n` from 1 to 10):
 
-- `time_diff{n}`: Time difference (in milliseconds) between the oldest dependency and `release_id`.
+- `time_diff{n}`: Time difference (in days) between the oldest dependency and `release_id`.
 - `dep_release_month{n}`: Month of release for the `n`-th oldest dependency.
 - `prior_versions{n}`: Number of earlier versions of the dependency within a time window (3, 6, or 12 months).
 - `num_with_cves{n}`: Number of earlier versions with transitive CVEs.
