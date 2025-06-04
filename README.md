@@ -51,8 +51,9 @@ There are **43 fields** in total:
 - `release_id`: Maven ID of the package under consideration.
 - `speed`: As defined and computed by the Goblin framework ([Jaime et al.](https://hal.science/hal-04392296/document)).
 - `package_release_month`: Month when `release_id` was published.
+- `num_dependencies`: number of direct dependencies.
 
-For each of the 10 dependencies (indexed by `n` from 1 to 10):
+For each of the 10 oldest dependencies (indexed by `n` from 0 to 9):
 
 - `time_diff{n}`: Time difference (in days) between the oldest dependency and `release_id`.
 - `dep_release_month{n}`: Month of release for the `n`-th oldest dependency.
